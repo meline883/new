@@ -1,0 +1,184 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/public/images/seed.jpg'); /* Путь к вашему изображению */
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6); /* Легкая тень для улучшения контраста */
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  margin-top: 1rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #2ecc71;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #1f2937; /* Темно-синий с серым оттенком */
+  color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info .icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.social-icons {
+  margin: 1.5rem 0;
+}
+
+.social-icon {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #27ae60; /* Цвет при наведении */
+}
+
+.footer-note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .hero-button {
+    font-size: 1rem;
+  }
+  .contact-info p {
+    font-size: 1rem;
+  }
+}
+/* Homee.css */
+
+/* Стили для класса gl */
+.gl {
+  display: flex;
+  justify-content: center; /* Выравнивание по центру */
+  gap: 30px; /* Расстояние между изображениями */
+  text-align: center;
+  margin-top: 2%;
+
+}
+.gl figure {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение изображения и подписи */
+  align-items: center; /* Центровка содержимого */
+}
+.gl img {
+  width: 400px; /* Укажите ширину изображения */
+  height: 400px; /* Сохраняет пропорции */
+  border-radius: 5px; /* Для закругления углов (опционально) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Добавляет тень (опционально) */
+ 
+}
+
+.gl figcaption {
+  margin-top: 10px; /* Расстояние между изображением и подписью */
+  font-size: 20px; /* Размер шрифта подписи */
+  color: #a89a9a; /* Цвет текста */
+  padding: 1rem 2rem;
+  background-color: #324258 ;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ 
+}

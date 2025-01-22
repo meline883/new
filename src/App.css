@@ -1,0 +1,14 @@
+/* Общие стили */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* Արգելում ենք հորիզոնական սքրոլը */
+}
+
+.App {
+  text-align: center;
+}

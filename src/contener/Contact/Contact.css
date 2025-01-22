@@ -1,0 +1,115 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-header {
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+}
+
+.contact-form-section, .contact-info-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-form-section h2, .contact-info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #45a049;
+}
+
+.contact-info {
+    line-height: 1.8;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.map {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-header p {
+        font-size: 1rem;
+    }
+
+    .contact-form-section, .contact-info-section {
+        padding: 15px;
+    }
+}
